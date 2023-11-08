@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
+  devise_scope :user do
+
+    get '/users', to: 'devise/registrations#new'
+    get '/users/password', to: 'devise/passwords#new'
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end
+
+  devise_for :users
+
+  get "about", to: "about#index"
 
   resources :posts
 
   get "up" => "rails/health#show", as: :rails_health_check
 
-    get "about", to: "about#index"
+
      root "posts#index"
 end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

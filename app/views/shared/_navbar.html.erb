@@ -6,15 +6,36 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
+
+
+    <li class="nav-item">
     <%= link_to "Home", root_path, class:"nav-link" %>
       </li>
+
+    <% if user_signed_in? %>
+    <li class="nav-item ">
+    <%= link_to "Sign Out", destroy_user_session_path, class:"nav-link" %>
+  </li>
+    <% else %>
+    <li class="nav-item ">
+    <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
+  </li>
+  <% end %>
+
       <li class="nav-item">
       <%= link_to "New Post", new_post_path, class:"nav-link" %>
       </li>
+
       <li class="nav-item">
+      <%= link_to "Edit Account", edit_user_registration_path, class:"nav-link" %>
+      </li>
+
+
+
+    <li class="nav-item">
         <%= link_to "About", about_path, class:"nav-link" %>
       </li>
+
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

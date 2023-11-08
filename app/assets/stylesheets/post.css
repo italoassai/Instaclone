@@ -18,3 +18,12 @@
     .show-post-link:hover{
         background-color: rgba(202, 201, 201, 0.082);
     }
+
+    div#up{
+        text-align: center;
+        margin-top: 20px;
+    }
+    div#in{
+        text-align: center;
+        margin-top: 20px;
+    }
