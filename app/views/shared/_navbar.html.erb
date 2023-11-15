@@ -11,26 +11,31 @@
     <li class="nav-item">
     <%= link_to "Home", root_path, class:"nav-link" %>
       </li>
-
     <% if user_signed_in? %>
+      <li class="nav-item ">
+    <%= link_to "My Profile", current_user, class:"nav-link" %>
+  </li>
+
     <li class="nav-item ">
     <%= link_to "Sign Out", destroy_user_session_path, class:"nav-link" %>
   </li>
+  <li class="nav-item">
+      <%= link_to "New Post", new_post_path, class:"nav-link" %>
+      </li>
+       <li class="nav-item">
+      <%= link_to "Myposts", posts_myposts_path, class:"nav-link" %>
+      </li>
     <% else %>
     <li class="nav-item ">
     <%= link_to "Sign Up", new_user_registration_path, class:"nav-link" %>
   </li>
   <% end %>
 
-      <li class="nav-item">
-      <%= link_to "New Post", new_post_path, class:"nav-link" %>
-      </li>
+  
 
       <li class="nav-item">
       <%= link_to "Edit Account", edit_user_registration_path, class:"nav-link" %>
       </li>
-
-
 
     <li class="nav-item">
         <%= link_to "About", about_path, class:"nav-link" %>

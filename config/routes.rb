@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  resources :comments
   devise_scope :user do
 
     get '/users', to: 'devise/registrations#new'
@@ -8,11 +10,17 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  resources :users, only: [:show]
+
   get "about", to: "about#index"
+
+   get "posts/myposts"
 
   resources :posts
 
   get "up" => "rails/health#show", as: :rails_health_check
+
+
 
 
      root "posts#index"
