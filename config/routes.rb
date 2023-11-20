@@ -8,7 +8,11 @@ Rails.application.routes.draw do
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 
-  devise_for :users
+
+  devise_for :users, controllers: {
+    registrations: 'users/registrations'
+  }
+
 
   resources :users, only: [:show]
 
