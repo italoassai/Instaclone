@@ -48,10 +48,15 @@
         <%= link_to "About", about_path, class:"nav-link" %>
       </li>
 
+      
+
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+
+     <%= form_with url: profiles_index_path, method: :get do |form| %>
+    <%= form.search_field :query, value: params[:query], placeholder: "Search", class:"search-field" %>
+    <%= form.submit "Search", class:"btn btn-primary" %>
+  <% end %>
+  
+
   </div>
 </nav>
