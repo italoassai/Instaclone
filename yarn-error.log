@@ -1,0 +1,26 @@
+Arguments: 
+  /usr/bin/node /usr/local/bin/yarn add rails_admin@3.1.2
+
+PATH: 
+  /home/italo/.rvm/gems/ruby-3.0.0/bin:/home/italo/.rvm/gems/ruby-3.0.0@global/bin:/home/italo/.rvm/rubies/ruby-3.0.0/bin:/home/italo/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Users/USURIO~2/AppData/Roaming/MobaXterm/slash/bin:/mnt/c/WINDOWS:/mnt/c/WINDOWS/system32:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/mnt/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/mnt/c/Users/Usuário/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet:/mnt/d/Programas/Git/cmd:/mnt/d/Programas/RailsInstaller/Git/cmd:/mnt/d/Programas/RailsInstaller/Ruby2.3.3/bin:/mnt/d/Programas/Microsoft VS Code/bin:/mnt/c/Users/Usuário/AppData/Local/GitHubDesktop/bin:/mnt/c/WINDOWS/sysnative:/snap/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  10.19.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: 140417931609920:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:../ssl/record/ssl3_record.c:676:
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
